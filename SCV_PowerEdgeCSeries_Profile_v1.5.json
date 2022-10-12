@@ -1,0 +1,318 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "Title": "Secure Component Verification Certificate Specification",
+    "STATIC": {
+    "COMMON_NAME" : "PowerEdge Secured Component Verification Certificate",
+    "ORG_NAME" : "Dell Technologies Inc.",
+    "UNIT_NAME" : "PowerEdge",
+    "COUNTRY" : "US",
+    "STATE" : "TX"
+    },
+    "PlatformProperties": {
+        "Description": {
+            "description": "Dell Platform Certificate Profile for PowerEdge Servers"
+        },
+        "Profile Version": {
+            "profile_version": "1.5"
+        },
+        "Profile Name": {
+            "profile_name": "PowerEdgeCSeries"
+        }
+    },
+    "PlatformCertificateExtensions": {
+        "CertificateType": {
+            "OID": "2.23.133.8.4"
+        },
+        "PlatformCertificateType": {
+            "OID": "2.23.133.2.25"
+        },
+        "PlatformConfigurationVersion": {
+            "OID": "2.23.133.5.1.7.2"
+        },
+        "PlatformSpecification": {
+            "OID": "2.23.133.2.19"
+        }
+    },
+    "PlatformConfiguration": {
+        "ComponentDetails": [
+            {
+                "SystemInformation": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00020001",
+                        "PlatformManufacturerOID": "2.23.133.5.1.1",
+                        "PlatformModelOID": "2.23.133.5.1.4",
+                        "PlatformSerialOID": "2.23.133.5.1.6",
+                        "PlatformVersionOID": "2.23.133.5.1.5"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        }
+                    ]
+                }
+            },
+            {
+                "Baseboard": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00030003"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            },
+            {
+                "Processor": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00010002"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            },
+            {
+                "Memory": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00060001"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            },
+            {
+                "Network": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00090002"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "mac_address"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            },
+            {
+                "iDRAC": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00060003"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "mac_address"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            },
+            {
+                "TPM": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00040009"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            },
+            {
+                "PCIE": {
+                    "Metadata": {
+                        "ComponentClassRegistryOID": "2.23.133.18.3.1",
+                        "ComponentClassValue": "0x00050000"
+                    },
+                    "properties": [
+                        {
+                            "CompareUID": false,
+                            "Name": "manufacturer"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "model"
+                        },
+                        {
+                            "CompareUID": true,
+                            "Name": "serial_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "hw_version_number"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "location"
+                        },
+                        {
+                            "CompareUID": false,
+                            "Name": "certificate_identifier"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jwt":"eyJhbGciOiJFUzM4NCIsInR5cCI6IkpXVCIsIng1YyI6WyJNSUlDN1RDQ0FuT2dBd0lCQWdJVWR4MmRKajcyVHIyWmlEbU9mVGhaNWpSSnBDOHdDZ1lJS29aSXpqMEVBd013Z1pneEN6QUpCZ05WQkFZVEFsVlRNUTR3REFZRFZRUUlEQVZVWlhoaGN6RVRNQkVHQTFVRUJ3d0tVbTkxYm1RZ1VtOWphekVmTUIwR0ExVUVDZ3dXUkdWc2JDQlVaV05vYm05c2IyZHBaWE1nU1c1akxqRXFNQ2dHQTFVRUN3d2hVMlZ5ZG1WeUlHRnVaQ0JKYm1aeVlYTjBjblZqZEhWeVpTQlRlWE4wWlcxek1SY3dGUVlEVlFRRERBNXBSRkpCUXlCVFExWWdVbTl2ZERBZUZ3MHlNREE0TWpVeE9ETTVOREJhRncwek9EQTRNalF4T0RNNU5EQmFNSUd1TVFzd0NRWURWUVFHRXdKVlV6RU9NQXdHQTFVRUNBd0ZWR1Y0WVhNeEV6QVJCZ05WQkFjTUNsSnZkVzVrSUZKdlkyc3hIekFkQmdOVkJBb01Ga1JsYkd3Z1ZHVmphRzV2Ykc5bmFXVnpJRWx1WXk0eEtqQW9CZ05WQkFzTUlWTmxjblpsY2lCaGJtUWdTVzVtY21GemRISjFZM1IxY21VZ1UzbHpkR1Z0Y3pFdE1Dc0dBMVVFQXd3a2FVUlNRVU1nVTJWamRYSmxaQ0JEYjIxd2IyNWxiblFnVm1WeWFXWnBZMkYwYVc5dU1IWXdFQVlIS29aSXpqMENBUVlGSzRFRUFDSURZZ0FFRG9PWTIyWFdjU3JnMFR6a1RMWStqREFNWDRXMmJoY25sOXhGbVVuOWk1dmJSK2E1UElLU2cvbnUreU1mSFBTUHhHQ3ltRUJWQVh4dE96Q2MvOW5zTThtZ1ZLd1pUR3VtMmJpTCt6eXBabko5MzBKQmRPZ0N2U1dqTCtSVjhWeDBvMll3WkRBZEJnTlZIUTRFRmdRVUI1V1phMkFIS2ZiLzB6d0YxTnBHeDlMUTRpa3dId1lEVlIwakJCZ3dGb0FVUlVQZGVnVTM0ZFdEajZFNlBFUzhiWFV0LzY0d0VnWURWUjBUQVFIL0JBZ3dCZ0VCL3dJQkFEQU9CZ05WSFE4QkFmOEVCQU1DQWdRd0NnWUlLb1pJemowRUF3TURhQUF3WlFJd2ZPb29JZTZQOC9TRjYrclNjbk9RWndWcGhhWG44dGJ5K1VEQXFoMHFaN281azY1WVcvNTcvakJnQ2JZMmtOOXBBakVBajZlamNyQ3FtOFVob241OUxZWjk5b21CaHp2L0NKK09tMm9qTndlQXNUWktuV3JIbFAyT081VWZ5RVZSZldvLyJdfQ..MGUCMGv0Y8a2d7XPL7Obvi1hV4KcyuEU0n_HTibSFhiMa3y2Qs8dyl4dj80q0d17aABrXAIxAIhdz8KsYYtZU05LVo_khxumvVF_J3uU8XX0RmODeS2UHMI-9hiUJgOBzu694jwBEg"
+    
+}
